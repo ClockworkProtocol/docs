@@ -4,7 +4,7 @@ module.exports = {
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#title
    */
-  title: 'Vuepress Docs Boilerplate',
+  title: 'Clockwork Docs',
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#description
    */
@@ -28,36 +28,31 @@ module.exports = {
    */
   themeConfig: {
     repo: '',
+    displayAllHeaders: true,
     editLinks: false,
     docsDir: '',
     editLinkText: '',
     lastUpdated: false,
     nav: [
       {
-        text: 'Guide',
-        link: '/guide/',
+        text: 'App',
+        link: '/',
       },
       {
-        text: 'Config',
-        link: '/config/'
+        text: 'Github',
+        link: 'https://github.com/ClockworkProtocol',
       },
-      {
-        text: 'VuePress',
-        link: 'https://v1.vuepress.vuejs.org'
-      }
     ],
-    sidebar: {
-      '/guide/': [
-        {
-          title: 'Guide',
-          collapsable: false,
-          children: [
-            '',
-            'using-vue',
-          ]
-        }
-      ],
-    }
+    sidebar: [
+      {
+        title: 'Clockwork Docs',
+        collapsable: false,
+        children: [
+          '',
+          'contract-interfaces',
+        ]
+      },
+    ]
   },
 
   /**
